@@ -16,24 +16,7 @@ public class ContactService {
     @Autowired
     ContactRepository contactRepository;
 
- /*   public User getUser(Long id) {
-         User user=null;
-         Optional<User> userOptional=userRepository.findById(id);
-         if (userOptional.isPresent())
-           user= userOptional.get();
 
-         return user;
-
-    }*/
-
-   /* public User createNewUser(User user) {
-        User user1=new User();
-        user1.setName(user.getName());
-        user1.setAge(user.getAge());
-         userRepository.save(user1);
-         return user1;
-
-    }*/
 
     public List<Contact> getContact(Long userId)
     {
